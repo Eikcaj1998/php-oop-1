@@ -8,8 +8,8 @@
     public $author;
     public function  __construct($id,$title,$sub_title,$genre,$author)
    }
-   $film1 = new movie();
-   $film2 = new movie();
+   $film1 = new movie('1','Pirati Dei Caraibi','ai confini del mare','azione,avventura','Rob Kidd');
+   $film2 = new movie('2','Pirati Dei Caraibi','la maledizione di Salazar','azione,avventura','Rob Kidd');
    
    $film1->id = '1';
    $film1->title = 'Pirati Dei Caraibi';
