@@ -7,19 +7,16 @@
     public $genre;
     public $author;
     public function  __construct($id,$title,$sub_title,$genre,$author)
+    {
+        $this->id = $id;
+        $this->title = $title = 'Pirati Dei Caraibi';
+        $this->sub_title = $sub_title;
+        $this->genre  = 'azione,avventura';
+        $this->author = 'Rob Kidd';
+    }
    }
-   $film1 = new movie('1','Pirati Dei Caraibi','ai confini del mare','azione,avventura','Rob Kidd');
-   $film2 = new movie('2','Pirati Dei Caraibi','la maledizione di Salazar','azione,avventura','Rob Kidd');
+   $film1 = new movie('1',$title,'ai confini del mare',$genre,$author);
+   $film2 = new movie('2',$title,'la maledizione di Salazar',$genre,$author);
    
-   $film1->id = '1';
-   $film1->title = 'Pirati Dei Caraibi';
-   $film1->sub_title = 'ai confini del mare';
-   $film1->genre = 'azione,avventura';
-   $film1->author = 'Rob Kidd';
 
-   $film1->id = '2';
-   $film1->title = 'Pirati Dei Caraibi';
-   $film1->sub_title = 'la maledizione di Salazar';
-   $film1->genre = 'azione,avventura';
-   $film1->author = 'Rob Kidd';
 ?>
